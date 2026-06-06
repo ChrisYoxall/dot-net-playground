@@ -54,3 +54,6 @@ CodeCoverage/
 # Rider
 .idea
 *DotSettings.user
+
+# Antigravity CLI
+.antigravitycli
