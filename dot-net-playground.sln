@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-principles", "design-principles\design-principles.csproj", "{C04D0D14-C1FA-4CA2-B744-D08EA797F937}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-principles", "Design\design-principles\design-principles.csproj", "{C04D0D14-C1FA-4CA2-B744-D08EA797F937}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-containers-demo", "test-containers-demo\test-containers-demo.csproj", "{D0613A26-37EF-48C4-B51A-39C64D1B8C60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-containers-demo", "Testing\test-containers-demo\test-containers-demo.csproj", "{D0613A26-37EF-48C4-B51A-39C64D1B8C60}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{23616751-2DA2-4D96-814D-E1612CB3A5CE}"
 EndProject
