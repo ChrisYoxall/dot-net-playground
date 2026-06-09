@@ -1,0 +1,20 @@
+@Web_Store_Backend_HostAddress = http://localhost:5003
+
+### Add a new Book and Author
+POST {{Web_Store_Backend_HostAddress}}/api/Books
+Content-Type: application/json
+
+{
+  "title": "The Color of Magic",
+  "description": "The first book in the Discworld series.",
+  "publishedOn": "1983-11-24T00:00:00Z",
+  "author": {
+    "name": "Terry Pratchett"
+  }
+}
+
+### Get all the books
+GET {{Web_Store_Backend_HostAddress}}/api/Books
+
+### Delete a book
+DELETE {{Web_Store_Backend_HostAddress}}/api/Books/6
