@@ -1,7 +1,11 @@
 
-# Entity Framework
+# Entity Framework Core
 
 Microsoft Documentation: https://learn.microsoft.com/en-us/ef/core
+
+The Entity Framework (EF) DbContext already implements both the Repository pattern and the Unit of Work pattern. This is stated in the
+official DbContext summary. If you implement the repository pattern around EF Core, you are creating an abstraction over an abstraction,
+leading to over-engineered solutions.  See [this article](https://antondevtips.com/blog/ef-core-in-clean-architecture-the-pragmatic-way)
 
 ## Docker
 
@@ -39,13 +43,3 @@ Created migrations by doing `dotnet ef migrations add InitialCreate`
 Got a note saying to undo this action, use `dotnet ef migrations remove`
 
 To apply the migrations, use `dotnet ef database update`
-
-
-- - -
-
-
-
-Get rid of the entity-framework project.
-
-Going to replace it with the two projects under Tools/EntityFramework. Make it a more realistic example with
-a real API project and some integration tests.  See https://www.youtube.com/watch?v=ssRE0pBNvpE

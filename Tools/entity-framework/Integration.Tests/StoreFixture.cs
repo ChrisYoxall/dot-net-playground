@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
+using Microsoft.AspNetCore.TestHost;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Testcontainers.PostgreSql;
@@ -16,8 +17,24 @@ public class StoreFixture : WebApplicationFactory<Program>, IAsyncLifetime
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.UseSetting("ConnectionStrings:DB", _db.GetConnectionString());
+        
+        
+        // Instead of setting the connection string using the environment variable above, can do things like this
+        // to configure the test WebHost
+        // builder.ConfigureTestServices(services =>
+        // {
+        //     var descriptor = services.SingleOrDefault(d => d.ServiceType == typeof(DbContextOptions<AppDbContext>));
+        //     
+        //     if (descriptor != null) services.Remove(descriptor);
+        //
+        //     services.AddDbContext<AppDbContext>(options =>
+        //     {
+        //         options.UseNpgsql(_db.GetConnectionString());
+        //     });
+        // });
 
         // Fake only what you don't own (payment gateways, email providers, etc.)
+        
     }
 
     public async ValueTask InitializeAsync()
