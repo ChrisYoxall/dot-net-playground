@@ -1,23 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-principles", "Design\design-principles\design-principles.csproj", "{C04D0D14-C1FA-4CA2-B744-D08EA797F937}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-containers-demo", "Testing\test-containers-demo\test-containers-demo.csproj", "{D0613A26-37EF-48C4-B51A-39C64D1B8C60}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Design", "Design", "{23616751-2DA2-4D96-814D-E1612CB3A5CE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{F255DDC1-D4DB-4FA3-9F8E-5E4AB921E3AC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{A527F443-7659-4525-A730-4ABE2849D66E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFramework", "EntityFramework", "{29760EAA-A8D3-4668-AB84-29210A35AF3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-principles", "Design\design-principles\design-principles.csproj", "{C04D0D14-C1FA-4CA2-B744-D08EA797F937}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test-containers-demo", "Testing\test-containers-demo\test-containers-demo.csproj", "{D0613A26-37EF-48C4-B51A-39C64D1B8C60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "entity-framework", "Tools\entity-framework", "{29760EAA-A8D3-4668-AB84-29210A35AF3E}"
 	ProjectSection(SolutionItems) = preProject
-		Tools\EntityFramework\README.md = Tools\EntityFramework\README.md
+		Tools\EntityFramework\README.md = Tools\entity-framework\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Store.Backend", "Tools\EntityFramework\Web.Store.Backend\Web.Store.Backend.csproj", "{5928ECD7-3743-41B1-B28D-2FEDC53973E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Store.Backend", "Tools\entity-framework\Web.Store.Backend\Web.Store.Backend.csproj", "{5928ECD7-3743-41B1-B28D-2FEDC53973E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Tests", "Tools\EntityFramework\Integration.Tests\Integration.Tests.csproj", "{8CC4576D-4604-4EBC-9139-25FFC818CEBF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration.Tests", "Tools\entity-framework\Integration.Tests\Integration.Tests.csproj", "{8CC4576D-4604-4EBC-9139-25FFC818CEBF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
